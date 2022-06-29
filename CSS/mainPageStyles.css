@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS";
+  font-size: 12px;
+}
+
+body {
+  min-height: 110vh;
+  width: 100%;
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.instagamerLogoPicture {
+  width: 500px;
+  height: 500px;
+}
+
+.instagamerProfilePicture {
+  height: 100px;
+  width: 100px;
+}
+
+.instagamerWrapperSettings {
+  align-items: center;
+  justify-content: start;
+  display: flex;
+  height: 110vh;
+  width: 65%;
+}
+
+.instagamerLogoSettings {
+  width: 55%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.instagamerCredentialsSettings {
+  min-height: 32rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 55%;
+}
+
+.credentialsGroupSettings {
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 1.2rem 0;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(215, 215, 215);
+}
+
+.credentialsGroupSettings:nth-child(1) {
+  min-height: 18rem;
+}
+
+.instagamerTitleSettings {
+  height: 8rem;
+}
+
+.profileAvatarSettings {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 55%;
+}
+
+.loginSettings {
+  border-radius: 3px;
+  padding: 7px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 153, 255);
+}
+
+.logoutSettings {
+  margin-top: 1rem;
+  color: rgb(0, 153, 255);
+}
+
+.profileQuestionSettings {
+  color: rgb(160, 160, 160);
+}
+
+.blueLink {
+  color: rgb(0, 153, 255);
+}
+
+.getTheAppSettings {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.downloadButtonsSettings {
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+}
+
+.appDownloadSettings {
+  background-size: cover;
+}
+
+.AppStoreItemSettings {
+  width: 170px;
+  height: 47px;
+}
+
+.GooglePlayItemSettings {
+  width: 200px;
+  height: 70px;
+}
+
+/* Responsivity -
+Cellphone */
+@media (max-width: 1024px) {
+  .instagamerWrapperSettings {
+    width: 91%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 645px) {
+  body {
+    background-image: url("../images/InstagramColorsBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .instagamerWrapperSettings {
+    width: 91%;
+  }
+  .instagamerLogoSettings {
+    display: none;
+  }
+  .instagamerCredentialsSettings {
+    width: 100%;
+  }
+  .credentialsGroupSettings {
+    border: 1px solid transparent;
+  }
+  .getAppText {
+    color: rgb(255, 255, 255);
+  }
+}
